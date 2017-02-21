@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercice_7</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <form>
+            <label for="pointure">Pointure : </label><input type="text" id="pointure" name="pointure"/><br/>
+            <label for="annee">Année de naissance : </label><input type="text" id="annee" name="annee"/><br/>
+            <button id="valider" name="valider" onclick="alert(calcul())">Valider</button>
+        </form>
+        <script>
+        function calcul(){
+          var foot = document.getElementById('pointure').value
+          var year = document.getElementById('annee').value
+          var button = document.getElementById("valider")
+          var result = foot * 2;
+          result = result + 5;
+          result = result * 50;
+          result = result - year;
+          result = result - 1766;
+          return result;
+          }
+        </script>
+    </body>
+</html>
